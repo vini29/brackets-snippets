@@ -1,0 +1,23 @@
+[
+    {
+        "name": "class",
+        "trigger": "class",
+        "usage": "class name description",
+        "description": "Create class Python",
+        "template": "class $${name}(object): \n $${description} \n !!{cursor}\n"  
+    },
+    {
+        "name": "function",
+        "trigger": "defi",
+        "usage": "def",
+        "description": "Create function init in class",
+        "template": "def __init__(self): \n !!{cursor}\n"  
+    },
+    {
+        "name": "import",
+        "trigger": "from",
+        "usage": "from models *",
+        "description": "Create import class from file .py",
+        "template": "from $${.py} import $${name} \n !!{cursor}\n"  
+    }
+]
